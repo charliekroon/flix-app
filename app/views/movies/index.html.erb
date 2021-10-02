@@ -10,6 +10,7 @@
       <p>
         <%= truncate(movie.description, length: 150, separator: ' ') %>
       </p>
+      <li><%= link_to(movie.title, movie_path(movie)) %></li>
     </div>
   </section>
 <% end %>
